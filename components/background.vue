@@ -27,9 +27,27 @@
   object-fit: cover;
   z-index: -2;
   opacity: 0;
-  transition: all 0.5s;
   animation:
     fade-in 1.5s forwards,
-    zoom-in 1s 0.5s ease-out forwards;
+    zoom-in 1s 0.7s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 </style>
