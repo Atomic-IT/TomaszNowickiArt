@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import Lara from '@primevue/themes/lara';
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -12,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/sitemap',
     '@nuxtjs/stylelint-module',
+    '@primevue/nuxt-module',
     'nuxt-link-checker',
     'nuxt-og-image',
     'nuxt-schema-org',
@@ -42,6 +44,13 @@ export default defineNuxtConfig({
         scss: {
           api: "modern",
         },
+      }
+    }
+  },
+  primevue: {
+    options: {
+      theme: {
+        preset: Lara
       }
     }
   }
