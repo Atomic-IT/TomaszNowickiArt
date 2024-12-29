@@ -1,3 +1,3 @@
 <template>
-  <welcome />
+  <background />
 </template>
