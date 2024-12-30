@@ -1,3 +1,4 @@
 <template>
+  <about />
   <background />
 </template>
