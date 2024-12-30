@@ -1,19 +1,22 @@
 <template>
-  <div class="gallery-container" id="galleria">
+  <div class="gallery-container">
     <h2 class="gallery-title">Galeria obrazów</h2>
-    <swiper-container class="my-swiper" :modules="[Navigation]" navigation loop>
-      <swiper-slide
-        v-for="(image, idx) in images"
-        :key="idx"
-        class="gallery-slide"
+    <ClientOnly>
+      <swiper-container
+        class="my-swiper"
+        :modules="[Navigation]"
+        navigation
+        loop
       >
-        <div class="gallery-slide-content">
-          <img class="gallery-image" :src="image.source" :alt="image.title" />
-          <h3 class="gallery-image-title">{{ image.title }}</h3>
-          <p class="gallery-image-description">{{ image.description }}</p>
-        </div>
-      </swiper-slide>
-    </swiper-container>
+        <swiper-slide
+          v-for="(image, idx) in images"
+          :key="idx"
+          class="gallery-slide"
+        >
+          <img class="gallery-image" :src="image.source" :alt="image.alt" />
+        </swiper-slide>
+      </swiper-container>
+    </ClientOnly>
   </div>
 </template>
 
@@ -25,63 +28,51 @@ import 'swiper/swiper-bundle.css'
 const images = ref([
   {
     source: 'img/gallery/castle-tree.webp',
-    title: 'Obraz 1',
-    description: 'Opis obrazu 1',
+    alt: 'Castle Tree painting',
   },
   {
     source: 'img/gallery/floating-pyramid.webp',
-    title: 'Obraz 2',
-    description: 'Opis obrazu 2',
+    alt: 'Floating Pyramid painting',
   },
   {
     source: 'img/gallery/foggy-portal.webp',
-    title: 'Obraz 3',
-    description: 'Opis obrazu 3',
+    alt: 'Foggy Portal painting',
   },
   {
     source: 'img/gallery/hovering-pyramid.webp',
-    title: 'Obraz 4',
-    description: 'Opis obrazu 4',
+    alt: 'Hovering Pyramid painting',
   },
   {
     source: 'img/gallery/in-the-air.webp',
-    title: 'Obraz 5',
-    description: 'Opis obrazu 5',
+    alt: 'In the Air painting',
   },
   {
     source: 'img/gallery/in-the-clouds.webp',
-    title: 'Obraz 6',
-    description: 'Opis obrazu 6',
+    alt: 'In the Clouds painting',
   },
   {
     source: 'img/gallery/mystical-pyramid.webp',
-    title: 'Obraz 7',
-    description: 'Opis obrazu 7',
+    alt: 'Mystical Pyramid painting',
   },
   {
     source: 'img/gallery/nokturn.webp',
-    title: 'Obraz 8',
-    description: 'Opis obrazu 8',
+    alt: 'Nokturn painting',
   },
   {
     source: 'img/gallery/pyramid.webp',
-    title: 'Obraz 9',
-    description: 'Opis obrazu 9',
+    alt: 'Pyramid painting',
   },
   {
     source: 'img/gallery/surreal-tree.webp',
-    title: 'Obraz 10',
-    description: 'Opis obrazu 10',
+    alt: 'Surreal Tree painting',
   },
   {
     source: 'img/gallery/tower.webp',
-    title: 'Obraz 11',
-    description: 'Opis obrazu 11',
+    alt: 'Tower painting',
   },
   {
     source: 'img/gallery/weeping-willow.webp',
-    title: 'Obraz 12',
-    description: 'Opis obrazu 12',
+    alt: 'Weeping Willow painting',
   },
 ])
 </script>

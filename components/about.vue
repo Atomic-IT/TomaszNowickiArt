@@ -6,7 +6,7 @@
       alt="Tomasz Nowicki"
     />
     <div class="description">
-      <h3>Nazywam się Tomasz Nowicki.</h3>
+      <h1>Nazywam się Tomasz Nowicki.</h1>
       <p class="description-content">
         Ukończyłem Wydział Sztuk Pięknych na Uniwersytecie im. Jana Długosza w
         Częstochowie w 2019r. Malarstwo studiowałem pod kierownictwem prof.
@@ -37,8 +37,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .about-container {
