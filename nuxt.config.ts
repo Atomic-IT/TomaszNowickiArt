@@ -17,8 +17,7 @@ export default defineNuxtConfig({
     'nuxt-link-checker',
     'nuxt-og-image',
     'nuxt-schema-org',
-    'nuxt-seo-utils',
-    'nuxt-swiper'
+    'nuxt-seo-utils'
   ],
   ssr: true,
   nitro: {

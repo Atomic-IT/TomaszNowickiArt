@@ -1,27 +1,21 @@
 <template>
   <div class="gallery-container">
     <h2 class="gallery-title">Galeria obrazów</h2>
-    <ClientOnly>
-      <swiper-container
-        class="my-swiper"
-        :modules="[Navigation]"
-        navigation
-        loop
+    <swiper class="my-swiper" :modules="[Navigation]" navigation loop>
+      <swiper-slide
+        v-for="(image, index) in images"
+        :key="index"
+        class="gallery-slide"
       >
-        <swiper-slide
-          v-for="(image, idx) in images"
-          :key="idx"
-          class="gallery-slide"
-        >
-          <img class="gallery-image" :src="image.source" :alt="image.alt" />
-        </swiper-slide>
-      </swiper-container>
-    </ClientOnly>
+        <img class="gallery-image" :src="image.source" :alt="image.alt" />
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 
 <script setup lang="ts">
 import { Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import 'swiper/swiper-bundle.css'
 
