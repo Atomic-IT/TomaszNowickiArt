@@ -40,7 +40,6 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: -5em;
 
   .contact-content {
     text-align: center;
