@@ -61,42 +61,5 @@ const images = imageBaseNames.map((name) => ({
 </script>
 
 <style lang="scss">
-.gallery {
-  padding: 0.5em;
-  text-align: center;
-
-  &-title {
-    font-size: 1.5em;
-    color: #c8cffa;
-    text-shadow: 0 0 5px;
-  }
-
-  &-swiper {
-    &-slide {
-      display: flex;
-      align-items: center;
-      max-height: 550px;
-      padding: 1em;
-      aspect-ratio: 1/1;
-
-      &-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-
-  @media (width >= 768px) {
-    &-title {
-      font-size: 1.9em;
-    }
-  }
-
-  @media (width >= 1200px) {
-    &-title {
-      font-size: 2.2em;
-    }
-  }
-}
+@use 'index';
 </style>
