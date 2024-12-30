@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="about-container">
+  <div class="about-container">
     <img
       src="public/img/tomasz-nowicki.webp"
       class="image-artist"

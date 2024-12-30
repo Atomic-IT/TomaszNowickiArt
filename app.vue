@@ -15,5 +15,5 @@ defineOgImageComponent('NuxtSeo', {
 </script>
 
 <style lang="scss">
-@use 'app';
+@use 'styles';
 </style>

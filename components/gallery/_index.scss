@@ -1,6 +1,8 @@
 .gallery {
   padding: 0.5em;
   text-align: center;
+  opacity: 0;
+  animation: fade-in 0.7s 1.4s forwards;
 
   &-title {
     font-size: 1.5em;

@@ -1,9 +1,12 @@
 .contact-container {
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  opacity: 0;
+  animation: fade-in 0.7s 1.7s forwards;
 
   .contact-content {
     text-align: center;
