@@ -1,5 +1,5 @@
 <template>
-  <div class="about-container" id="about">
+  <div id="about" class="about-container">
     <img
       src="public/img/tomasz-nowicki.webp"
       class="image-artist"
@@ -37,7 +37,8 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style scoped lang="scss">
 .about-container {
