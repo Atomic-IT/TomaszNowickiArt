@@ -6,6 +6,8 @@
 </template>
 
 <script setup lang="ts">
+import 'primeicons/primeicons.css'
+
 defineOgImageComponent('NuxtSeo', {
   title: 'NuxtStarter by Atomic IT',
   description:
