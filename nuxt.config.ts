@@ -53,5 +53,8 @@ export default defineNuxtConfig({
         preset: Lara
       }
     }
-  }
+  },
+  components: [
+    { path: '~/components', extensions: ['vue'] },
+  ]
 })
