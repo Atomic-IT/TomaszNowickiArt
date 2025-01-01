@@ -1,9 +1,10 @@
 <template>
   <div id="index">
-    <navbar />
-    <about />
-    <gallery />
-    <contact />
+    <home-navbar />
+    <home-about />
+    <home-gallery />
+    <home-contact />
+    <home-footer />
     <background />
   </div>
 </template>
