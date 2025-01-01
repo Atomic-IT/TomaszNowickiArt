@@ -1,0 +1,28 @@
+.navbar {
+  padding: 0 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &-heading {
+    font-size: 2em;
+    color: #c8cffa;
+    text-shadow: 0 0 5px;
+  }
+
+  &-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1em;
+    list-style: none;
+
+    &-link {
+      text-decoration: none;
+      color: #c8cffa;
+      font-size: 1em;
+      text-shadow: 0 0 5px;
+    }
+  }
+}
