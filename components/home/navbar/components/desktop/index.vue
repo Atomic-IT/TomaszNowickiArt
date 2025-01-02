@@ -1,20 +1,11 @@
 <template>
   <div class="desktop">
-    <div class="navbar-items">
-      <a
-        v-for="(link, index) in navbarItems"
-        :key="index"
-        :href="link.href"
-        class="navbar-items-link"
-      >
-        {{ link.label }}
-      </a>
-    </div>
+    <navbar-items />
   </div>
 </template>
 
 <script setup lang="ts">
-import { navbarItems } from '~/components'
+import { NavbarItems } from '../'
 </script>
 
 <style lang="scss">

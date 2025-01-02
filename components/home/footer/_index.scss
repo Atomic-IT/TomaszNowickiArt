@@ -79,6 +79,10 @@
 
     a {
       font-size: 1.2em;
+
+      &:hover {
+        transform: none;
+      }
     }
   }
 }

@@ -5,8 +5,13 @@
       height: 44px;
       background: transparent !important;
       border: none !important;
+      border-radius: 50%;
       color: #c8cffa !important;
       padding: 0 !important;
+
+      &:hover {
+        background: #9facff30 !important;
+      }
     }
   }
 }
@@ -26,19 +31,25 @@
     color: #c8cffa !important;
   }
 
+  .p-drawer-close-button:hover {
+    background: #9facff30 !important;
+  }
+
   .shiny-text.title {
     margin-top: 2em;
   }
 
-  .navbar-items-container {
+  .navbar-items {
     display: flex;
     flex-direction: column;
     margin: 6em 0;
     gap: 1.5em;
 
     a {
+      max-width: max-content;
       text-decoration: none;
       color: #fff;
+      margin: auto;
     }
   }
 

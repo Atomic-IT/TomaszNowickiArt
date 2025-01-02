@@ -1,6 +1,10 @@
 <template>
   <div class="gallery">
-    <h2 class="gallery-title shiny-text title">Galeria obrazów</h2>
+    <ad-atom-heading
+      :tag="2"
+      text="Galeria obrazów"
+      class="gallery-title shiny-text title"
+    />
     <swiper
       class="gallery-swiper"
       :modules="[Autoplay]"
@@ -24,7 +28,7 @@
       loop
     >
       <swiper-slide
-        v-for="(image, index) in images"
+        v-for="(image, index) in paintings"
         :key="index"
         class="gallery-swiper-slide"
       >
@@ -45,37 +49,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import 'swiper/swiper-bundle.css'
 
-const imageBaseNames = [
-  'glacier',
-  'circle',
-  'nocturne',
-  'in-the-clouds',
-  'foggy-portal',
-  'in-the-air',
-  'castle-tree',
-  'spire',
-  'hovering-pyramid',
-  'pyramid',
-  'floating-pyramid',
-  'mystical-pyramid',
-  'fire-walk-with-me',
-  'ink-flood',
-  'enormous-loneliness',
-  'weeping-willow',
-  'surreal-tree',
-  'barrens',
-  'without-title-2',
-  'frozen-tree',
-  'tower',
-  'without-title-1',
-  'uroboros',
-  'dragon-hunting',
-]
-
-const images = imageBaseNames.map((name) => ({
-  source: `img/gallery/${name}.webp`,
-  alt: `${name.replace(/-/g, ' ')} painting`,
-}))
+import { paintings } from '.'
 </script>
 
 <style lang="scss">

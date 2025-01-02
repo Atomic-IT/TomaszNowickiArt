@@ -2,11 +2,15 @@
   <div class="contact">
     <div class="container">
       <div class="contact-content">
-        <h3 class="contact-content-title shiny-text title">Kontakt</h3>
-        <p class="contact-content-description">
-          Masz jakieś pytania? Skontaktuj się ze mną, a chętnie opowiem Ci
-          więcej o mojej pracy.
-        </p>
+        <ad-atom-heading
+          :tag="3"
+          text="Kontakt"
+          class="contact-content-title shiny-text title"
+        />
+        <ad-atom-paragraph
+          text="Masz jakieś pytania? Skontaktuj się ze mną, a chętnie opowiem Ci więcej o mojej pracy."
+          class="contact-content-description"
+        />
         <ad-atom-button
           class="contact-content-button"
           label="Gmail"

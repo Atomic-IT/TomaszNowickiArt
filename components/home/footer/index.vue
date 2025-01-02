@@ -2,20 +2,30 @@
   <div class="footer">
     <div class="container">
       <div class="footer-artist">
-        <h4 class="footer-artist-heading shiny-text title">Tomasz Nowicki</h4>
+        <ad-atom-heading
+          :tag="4"
+          text="Tomasz Nowicki"
+          class="footer-artist-heading shiny-text title"
+        />
         <div class="footer-artist-contact-info">
-          <p @click="copyContent('nowickitn@wp.pl')">
-            nowickitn@wp.pl<i class="pi pi-copy"></i>
-          </p>
-          <p @click="copyContent('+48 123 456 789')">
-            +48 123 456 789<i class="pi pi-copy"></i>
-          </p>
+          <ad-atom-paragraph
+            text="nowickitn@wp.pl"
+            @click="copyContent('nowickitn@wp.pl')"
+          >
+            <i class="pi pi-copy"></i>
+          </ad-atom-paragraph>
+          <ad-atom-paragraph
+            text="+48 123 456 789"
+            @click="copyContent('+48 123 456 789')"
+          >
+            <i class="pi pi-copy"></i>
+          </ad-atom-paragraph>
           <ad-template-social-links />
         </div>
       </div>
 
       <div class="footer-authors">
-        <a href="https://github.com/Atomic-IT">
+        <ad-molecule-anchor href="https://github.com/Atomic-IT">
           made by &nbsp;
           <span class="shiny-text">Atomic IT</span>
           <img
@@ -25,7 +35,7 @@
             height="28"
             alt="Atomic IT logo"
           />
-        </a>
+        </ad-molecule-anchor>
       </div>
     </div>
   </div>

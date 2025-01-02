@@ -1,7 +1,12 @@
 <template>
   <nav class="navbar">
     <div class="container">
-      <p class="navbar-heading">Sztanga & Sztaluga</p>
+      <ad-molecule-anchor
+        href="https://www.youtube.com/@wejrzeniawsiebie8813"
+        label="Sztanga & Sztaluga"
+        target="_blank"
+        class="navbar-heading"
+      />
       <desktop />
       <mobile />
     </div>

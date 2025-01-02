@@ -1,5 +1,5 @@
 <template>
-  <prime-vue-button
+  <Button
     :label="props.label"
     :icon="props.icon"
     :icon-pos="props.iconPos"
@@ -36,9 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { Button as PrimeVueButton } from 'primevue'
-
-import type { ButtonInterface } from '~/components'
+import type { ButtonInterface } from '.'
 
 const props = defineProps<ButtonInterface>()
 </script>
