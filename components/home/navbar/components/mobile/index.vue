@@ -19,7 +19,7 @@
           <a href="/">GALERIA</a>
           <a href="/">KONTAKT</a>
         </div>
-        <social-links />
+        <ad-template-social-links />
       </Drawer>
     </div>
   </div>

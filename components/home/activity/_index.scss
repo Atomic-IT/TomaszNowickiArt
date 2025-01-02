@@ -1,0 +1,15 @@
+#activity .template-description {
+  &-content {
+    margin-bottom: 1em;
+  }
+
+  & > .container {
+    flex-direction: column-reverse;
+  }
+
+  @media (width >= 768px) {
+    & > .container {
+      flex-direction: row-reverse;
+    }
+  }
+}

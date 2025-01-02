@@ -5,7 +5,7 @@
       height: 44px;
       background: transparent !important;
       border: none !important;
-      color: #c8cffa;
+      color: #c8cffa !important;
       padding: 0 !important;
     }
   }
@@ -21,7 +21,8 @@
   border-right: none !important;
   border-bottom: none !important;
 
-  .p-drawer-close-button {
+  .p-drawer-close-button,
+  .p-drawer-close-button:hover {
     color: #c8cffa !important;
   }
 

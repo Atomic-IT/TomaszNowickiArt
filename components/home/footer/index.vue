@@ -10,6 +10,7 @@
           <p @click="copyContent('+48 123 456 789')">
             +48 123 456 789<i class="pi pi-copy"></i>
           </p>
+          <ad-template-social-links />
         </div>
       </div>
 
@@ -20,8 +21,8 @@
           <img
             class="desktop"
             src="/logo.png"
-            width="30"
-            height="30"
+            width="28"
+            height="28"
             alt="Atomic IT logo"
           />
         </a>
