@@ -1,16 +1,16 @@
 <template>
   <nav class="navbar">
-    <p class="navbar-heading">Tomasz Nowicki</p>
-    <ul class="navbar-items">
-      <li><a href="" class="navbar-items-link">STRONA GŁÓWNA</a></li>
-      <li><a href="" class="navbar-items-link">O MNIE</a></li>
-      <li><a href="" class="navbar-items-link">GALERIA</a></li>
-      <li><a href="" class="navbar-items-link">KONTAKT</a></li>
-    </ul>
+    <div class="container">
+      <p class="navbar-heading">Sztanga & Sztaluga</p>
+      <desktop />
+      <mobile />
+    </div>
   </nav>
 </template>
 
-<script></script>
+<script setup lang="ts">
+import { Desktop, Mobile } from './components'
+</script>
 
 <style lang="scss">
 @use 'index';

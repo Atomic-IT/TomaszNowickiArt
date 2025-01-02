@@ -1,55 +1,91 @@
-.about-container {
-  padding: 10em 0;
+.about {
+  position: relative;
+  top: -2em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   color: #fff;
   opacity: 0;
   animation: fade-in 0.7s 1.1s forwards;
-  margin-bottom: 8em;
+  padding: 1em 0;
 
-  .image-artist {
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-image-artist {
+    width: 100%;
     max-width: 400px;
-    max-height: 400px;
-    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px #0003;
   }
 
-  .description {
+  &-description {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.1em;
+    line-height: 1.4;
     max-width: 600px;
-    margin-left: 3em;
-    padding: 3em;
-  }
+    gap: 1em;
 
-  .social-links {
-    display: flex;
-    justify-content: start;
-    gap: 1.2em;
-    margin-top: 1em;
-
-    .social-links-image {
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      transition:
-        transform 0.5s ease,
-        opacity 0.5s ease;
+    &-content {
+      margin: 0 0 1em;
     }
 
-    .social-links-image:hover {
-      transform: scale(1.2);
-      opacity: 0.5;
+    &-header {
+      margin-bottom: 0;
+      font-weight: 500;
+      color: #fff;
     }
   }
 
-  .description-content {
-    margin-top: -0.5em;
+  @media (width >= 360px) {
+    padding: 1.5em 0;
+  }
+
+  @media (width >= 500px) {
+    &-image-artist {
+      margin-bottom: 1em;
+    }
+  }
+
+  @media (width >= 768px) {
+    top: 0;
+
+    &-image-artist {
+      margin-bottom: 0;
+    }
+
+    & > .container {
+      flex-direction: row;
+      gap: 3em;
+    }
+  }
+
+  @media (width >= 992px) {
+    & > .container {
+      gap: 5em;
+    }
+
+    &-description {
+      max-width: 500px;
+      gap: 2em;
+    }
+  }
+
+  @media (width >= 1200px) {
+    & > .container {
+      gap: 7em;
+    }
+
+    &-description {
+      max-width: 580px;
+      gap: 3em;
+    }
   }
 }

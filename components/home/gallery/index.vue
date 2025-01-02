@@ -1,6 +1,6 @@
 <template>
   <div class="gallery">
-    <h2 class="gallery-title">Galeria obrazów</h2>
+    <h2 class="gallery-title shiny-text title">Galeria obrazów</h2>
     <swiper
       class="gallery-swiper"
       :modules="[Autoplay]"

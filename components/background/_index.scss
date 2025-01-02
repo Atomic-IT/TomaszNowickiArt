@@ -4,7 +4,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
   background: #000000b2;
   backdrop-filter: blur(1em);
   overflow: hidden;
@@ -19,9 +19,9 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -2;
+  z-index: -3;
   opacity: 0;
   animation:
     fade-in 1.5s forwards,
-    zoom-in 1s 0.7s ease-out forwards;
+    zoom-in 1s 0.8s ease-out forwards;
 }

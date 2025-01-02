@@ -1,0 +1,14 @@
+.desktop {
+  .navbar-items {
+    display: flex;
+    gap: 4em;
+    font-size: 1em;
+
+    &-link {
+      text-decoration: none;
+      color: #c8cffa;
+      font-size: 1em;
+      text-shadow: 0 0 5px;
+    }
+  }
+}
