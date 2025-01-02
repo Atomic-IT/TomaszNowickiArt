@@ -1,0 +1,41 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  gap: 2em;
+
+  > a {
+    text-decoration: none;
+    font-size: 2em;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    &.pi-youtube {
+      color: #f00;
+    }
+
+    &.pi-instagram {
+      background: linear-gradient(to top left, #5b51d8, #c13584, #fcaf45);
+      background-clip: text;
+      color: transparent;
+    }
+
+    &.pi-facebook {
+      color: #3b5998;
+    }
+  }
+
+  @media (width >= 400px) {
+    > a {
+      font-size: 2.2em;
+    }
+  }
+
+  @media (width >= 768px) {
+    justify-content: start;
+    margin-top: 0;
+  }
+}

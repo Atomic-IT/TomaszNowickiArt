@@ -1,0 +1,11 @@
+@media (width < 992px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media (width >= 992px) {
+  .mobile {
+    display: none !important;
+  }
+}

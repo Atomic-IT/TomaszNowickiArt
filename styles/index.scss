@@ -1,0 +1,12 @@
+@use 'keyframes';
+@use 'utilities';
+
+* {
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+body {
+  background: #0e101c;
+  margin: 0;
+}

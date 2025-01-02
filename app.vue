@@ -6,6 +6,8 @@
 </template>
 
 <script setup lang="ts">
+import 'primeicons/primeicons.css'
+
 defineOgImageComponent('NuxtSeo', {
   title: 'NuxtStarter by Atomic IT',
   description:
@@ -14,6 +16,6 @@ defineOgImageComponent('NuxtSeo', {
 })
 </script>
 
-<style scoped lang="scss">
-@use 'app';
+<style lang="scss">
+@use 'styles';
 </style>

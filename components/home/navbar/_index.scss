@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  opacity: 0;
+  animation: fade-in 0.7s 1s forwards;
+  background: #000b;
+  padding: 1em 0;
+  z-index: 999;
+  backdrop-filter: blur(1em);
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-heading {
+    font-size: 1.4em;
+    color: #c8cffa;
+    text-decoration: none;
+    text-shadow: 0 0 5px;
+    margin: 0;
+  }
+
+  @media (width >= 768px) {
+    padding: 1.2em 0;
+  }
+}
